@@ -1,3 +1,11 @@
-const input = 'hey my name is Montana';
+const input = 'hi mom';
+const wordArray = input.split(" ");
+var newWord = 'a';
 
-const wordArray = input.split(" ")
+wordArray.forEach((word) => {
+    if (word.length > newWord.length) {
+        newWord = word; 
+    }
+});
+
+console.log(newWord);
